@@ -11,13 +11,14 @@
 .list {
   display: flex;
   list-style: none;
-  gap: 8px;
+  gap: 18px;
 }
 .link {
   color: white;
   text-decoration: none;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 22px;
 }
 .link:active,
 .link:hover {
