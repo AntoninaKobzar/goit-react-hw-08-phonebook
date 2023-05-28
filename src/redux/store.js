@@ -13,14 +13,13 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
-
+const enhancer = devToolsEnhancer();
 const persistConfig = {
   key: 'contacts',
   storage,
 };
 const persistedReducer = persistReducer(persistConfig, contactsReducer);
 
-const enhancer = devToolsEnhancer();
 export const store = configureStore({
   reducer: {
     contacts: persistedReducer,
