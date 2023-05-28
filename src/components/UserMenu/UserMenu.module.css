@@ -1,0 +1,23 @@
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.email {
+  color: white;
+  cursor: pointer;
+}
+.email:active,
+.email:hover {
+  color: rgb(219, 214, 214);
+  /* transform: scale(1.1); */
+}
+.logout {
+  height: 28px;
+  border-radius: 3px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}

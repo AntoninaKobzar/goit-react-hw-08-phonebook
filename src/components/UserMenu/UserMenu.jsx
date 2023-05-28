@@ -1,8 +1,14 @@
+import css from './UserMenu.module.css';
+
 const UserMenu = () => {
   return (
-    <div>
-      <p>mango@mail.com</p>
-      <button>Logout</button>
+    <div className={css.user}>
+      <a href="/" className={css.email}>
+        mango@mail.com
+      </a>
+      <button type="submit" className={css.logout}>
+        Logout
+      </button>
     </div>
   );
 };

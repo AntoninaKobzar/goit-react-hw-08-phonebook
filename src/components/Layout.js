@@ -1,26 +1,38 @@
 import { Suspense } from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
-import UserMenu from './UserMenu';
 import Loader from './Loader';
-// import css from './Layout.module.css';
+import UserMenu from './UserMenu';
+
+import css from './Navigation/Navigation.module.css';
 
 const Layout = () => {
   return (
     <div>
-      <ul>
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/register">Register</NavLink>
-        </li>
-        <li>
-          <NavLink to="/login">Login</NavLink>
-        </li>
-        <li>
-          <NavLink to="/user">{<UserMenu />}</NavLink>
-        </li>
-      </ul>
+      <div className={css.header}>
+        <NavLink className={css.link} to="/">
+          Home
+        </NavLink>
+
+        <ul className={css.list}>
+          <li>
+            <NavLink className={css.link} to="/register">
+              Register
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className={css.link} to="/login">
+              Login
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className={css.link} to="/contacts">
+              Contacts
+            </NavLink>
+          </li>
+        </ul>
+        <UserMenu />
+      </div>
+
       <main>
         <Suspense fallback={<Loader />}>
           <Outlet />
