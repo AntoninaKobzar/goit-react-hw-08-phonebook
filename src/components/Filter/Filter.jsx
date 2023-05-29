@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { setFilter } from '../../redux/contacts/filterSlice';
 import css from './Filter.module.css';
 
-const Filter = () => {
+export const Filter = () => {
   const dispatch = useDispatch();
 
   const onFilterChange = e => dispatch(setFilter(e.currentTarget.value));
@@ -21,5 +21,3 @@ const Filter = () => {
     </label>
   );
 };
-
-export default Filter;

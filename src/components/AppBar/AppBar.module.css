@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: blue;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  color: white;
+  height: 100px;
+  font-size: 24px;
+  font-weight: 500;
+}

@@ -5,7 +5,7 @@ import { addContact } from 'redux/contacts/contactsOperations';
 import { getContacts } from 'redux/contacts/contactsSelectors';
 import Notiflix from 'notiflix';
 
-const ContactForm = () => {
+export const ContactForm = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(getContacts);
 
@@ -57,5 +57,3 @@ const ContactForm = () => {
     </form>
   );
 };
-
-export default ContactForm;
