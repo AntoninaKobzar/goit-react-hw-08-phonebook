@@ -1,23 +1,12 @@
-.user {
+.wrapper {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 12px;
 }
-.email {
-  color: white;
-  cursor: pointer;
+.username {
+  padding: 12px;
 }
-.email:active,
-.email:hover {
-  color: rgb(219, 214, 214);
-  /* transform: scale(1.1); */
-}
-.logout {
-  height: 28px;
-  border-radius: 3px;
-  border: 1px solid white;
-  color: white;
-  background-color: transparent;
-  cursor: pointer;
+.btn {
+  background-color: white;
+  color: blue;
+  margin-top: 10px;
 }

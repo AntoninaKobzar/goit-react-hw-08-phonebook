@@ -16,9 +16,9 @@ const Contacts = () => {
   }, [dispatch]);
   return (
     <div className={css.container}>
-      <h1>Phonebook</h1>
+      <h1 className={css.title}>Phonebook</h1>
       <ContactForm />
-      <h2>Contacts</h2>
+      <h2 className={css.title}>Contacts</h2>
       <Filter />
       {isLoading && !error && <b>{'Loading...'}</b>}
       <ContactList />

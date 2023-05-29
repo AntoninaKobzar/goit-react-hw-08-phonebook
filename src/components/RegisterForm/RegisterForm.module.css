@@ -1,0 +1,19 @@
+.form {
+  width: 560px;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 30px 30px;
+}
+
+.input {
+  border-color: blue;
+  margin-bottom: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 60px;
+}

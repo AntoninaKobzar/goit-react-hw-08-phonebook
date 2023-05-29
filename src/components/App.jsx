@@ -6,7 +6,6 @@ import { PrivateRoute } from './PrivatPoute';
 import { RestrictedRoute } from './RestrictedRoute';
 import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from './hooks/useAuth';
-// import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 
 const HomePage = lazy(() => import('../pages/Home'));
 const RegisterPage = lazy(() => import('../pages/Register'));
